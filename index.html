@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Bilguissou Diallo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 20px;
+            border: 1px solid white;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #203a43;
+        }
+
+        section {
+            padding: 80px 10%;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        section:nth-child(even) {
+            background: #e9ecef;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #203a43;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .card ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #203a43;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bilguissou DIALLO</h1>
+    <p>Etudiante en informatique à l'université Paris-Saclay</p>
+
+    <nav>
+        <ul>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#slides">CV</a></li>
+            <li><a href="#application">GitHub</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="presentation">
+    <h2>1. Présentation</h2>
+    <div class="card">
+        <p>
+            <ul>
+                Étudiante en licence 3 informatique à l’université paris saclay, j’ai trouvé mon intérêt
+                dans le domaine du réseau informatique tant dans son architecture que dans son
+                fonctionnement. J’ai eu l’opportunité de développé des compétences nécessaires et
+                suffisantes me permettant aujourd’hui de poursuivre mes études en master de
+                réseaux/cybersécurité.
+            </ul>
+        </p>
+    </div>
+</section>
+
+<section id="slides">
+    <h2>2. CV</h2>
+    <div class="card">
+        <p>
+            Lien Pour consulter le CV :
+        </p>
+        <p>
+            👉 <a href="CV_alt_Bilguissou.pdf">Télécharger le CV</a>
+        </p>
+    </div>
+</section>
+
+<section id="application">
+    <h2>3. GitLab</h2>
+    <div class="card">
+        <p>
+            Compte GitHub disponible ici :
+        </p>
+        <p>
+            👉 <a href="https://github.com/Bill-cyber25">Accéder à GitHub</a>
+        </p>
+    </div>
+</section>
+
+
+
+<footer>
+    <p>© 2026 - Projet CMS | Création Micro Start Up</p>
+</footer>
+
+</body>
+</html>
