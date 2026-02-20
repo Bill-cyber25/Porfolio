@@ -5,157 +5,109 @@
     <title>Portfolio - Bilguissou Diallo</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: rgb(90, 116, 126);
+        }
+        .header-text {
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.85;
+            margin-bottom: 20px;
         }
 
-        body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
-            scroll-behavior: smooth;
+        .description {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .header-text nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-text nav {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+        header img {
+            width: 180px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 15px 35px rgba(106, 85, 118, 0.4);
+            transition: transform 0.4s ease;
         }
 
+        header img:hover {
+            transform: scale(1.05);
+        }
         header {
             height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header h1 {
-            font-size: 3.2rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-bottom: 40px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
+            gap: 70px;
+            padding: 40px;
+        }
+        .photo-wrapper {
+            width: 220px;
+            height: 260px;
+            background: linear-gradient(135deg, #739d97, #758598);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.4);
         }
 
-        nav a {
-            text-decoration: none;
-            color: white;
-            padding: 12px 20px;
-            border: 1px solid white;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            background: white;
-            color: #203a43;
-        }
-
-        section {
-            padding: 80px 10%;
-            background: #f5f5f5;
-            color: #333;
-        }
-
-        section:nth-child(even) {
-            background: #e9ecef;
-        }
-
-        section h2 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            color: #203a43;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        .card ul {
-            margin-top: 10px;
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #203a43;
-            color: white;
+        .photo-wrapper img {
+            width: 200px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
         }
     </style>
+      
+
 </head>
 
 <body>
 
 <header>
-    <h1>Bilguissou DIALLO</h1>
-    <p>Etudiante en informatique à l'université Paris-Saclay</p>
+    <div class="photo-wrapper">
+        <img src="IMG_3495.jpeg" alt="Photo de profil">
+    </div>
 
-    <nav>
-        <ul>
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#slides">CV</a></li>
-            <li><a href="#application">GitHub</a></li>
-        </ul>
-    </nav>
+    <div class="header-text">
+        <h1>Bilguissou DIALLO</h1>
+        <p class="description">
+            Étudiante en licence 3 informatique à l’Université Paris-Saclay, j’ai développé un intérêt particulier pour
+            les domaines du réseau, de l’administration système et de la cybersécurité.
+            J’ai eu l’opportunité de renforcer mes compétences grâce aux excellents enseignants de l’université.
+            Aujourd’hui, je souhaite poursuivre mes études en intégrant un master en réseaux et cybersécurité afin de devenir administratrice réseau.
+        </p>
+
+        <nav>
+            <a href="CV_alt_Bilguissou.pdf">📄 Télécharger le CV</a>
+            <a href="https://github.com/Bill-cyber25">💻 Accéder à GitHub</a>
+        </nav>
+    </div>
 </header>
-<section id="presentation">
-    <h2>1. Présentation</h2>
-    <div class="card">
-        <p>
-            <ul>
-                Étudiante en licence 3 informatique à l’université paris saclay, j’ai trouvé mon intérêt
-                dans le domaine du réseau informatique tant dans son architecture que dans son
-                fonctionnement. J’ai eu l’opportunité de développé des compétences nécessaires et
-                suffisantes me permettant aujourd’hui de poursuivre mes études en master de
-                réseaux/cybersécurité.
-            </ul>
-        </p>
-    </div>
-</section>
-
-<section id="slides">
-    <h2>2. CV</h2>
-    <div class="card">
-        <p>
-            Lien Pour consulter le CV :
-        </p>
-        <p>
-            👉 <a href="CV_alt_Bilguissou.pdf">Télécharger le CV</a>
-        </p>
-    </div>
-</section>
-
-<section id="application">
-    <h2>3. GitLab</h2>
-    <div class="card">
-        <p>
-            Compte GitHub disponible ici :
-        </p>
-        <p>
-            👉 <a href="https://github.com/Bill-cyber25">Accéder à GitHub</a>
-        </p>
-    </div>
-</section>
 
 
 
 <footer>
-    <p>© 2026 - Projet CMS | Création Micro Start Up</p>
+    <p>© 2026 - Porfolio | Page de présentation</p>
 </footer>
 
 </body>
